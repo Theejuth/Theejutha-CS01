@@ -1,3 +1,3 @@
-i = input("Enter your name : ")
-for x in i :
-    print (x)
+x = int(input("Enter the number : "))
+for i in range(100):
+    print( x + i )
