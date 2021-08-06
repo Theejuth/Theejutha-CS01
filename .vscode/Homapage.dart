@@ -196,10 +196,19 @@ class _HomepageState extends State<HomePage> {
 @override
 Widget Search(BuildContext context) {
   return Expanded(
-      child: Center(
-    child: Text(
-      "Search",
-      style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+      body: Conatainer(
+        child: SafeArea(
+          child: Column(
+            children: <Widget>[
+              Text('My Card',
+              style: TextStyle(fontFamily: 'Avenir',
+              fontSize: 44,
+              color: const Color(0xffffffff),
+              fontWeight: FontWeight.w900,
+              ),
+              textAlign: TextAligh.left,
+            ],),)
+      )
     ),
   ));
 }
@@ -207,11 +216,12 @@ Widget Search(BuildContext context) {
 @override
 Widget Notications(BuildContext context) {
   return Expanded(
-      child: Center(
-    child: Text(
-      "Notications",
-      style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-    ),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(children: [
+          Container(padding: const EdgeInsets.all(10.0),decoration: BoxDecoration(color: Colors.amber),)
+        ],)
+        )),) 
   ));
 }
 
