@@ -3,4 +3,4 @@ for i in range(len(thislist)):
     print(i)
     if (thislist[i] == 20):
            thislist[i] = 200
-           print(thislist)
+    print(thislist)
